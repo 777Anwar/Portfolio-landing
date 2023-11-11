@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+</head>
+<body>
+    <nav class=" navbar">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <rect width="64" height="64" fill="#030303"/>
+            <circle cx="32" cy="32" r="14" stroke="#FFF7F0" stroke-width="4"/>
+            </svg>
+        </div>
+        <div><button class="navbar-button"><p class="paregraph-button">Free Consultation</p></button></div>
+    </nav>
+    
+       <!------first Section------>
+
+
+    <div class="first-text">
+    <h1>Design solutions made easy</h1>
+    <p>With over ten years of experience in various design disciplines, I’m your one-stop <br> shop for your design needs.</p>
+    </div>
+
+    <section class="container grid">
+      <div class="cards-solution">
+        <div class="first-solution">
+          <div class="skill skill-one">
+            <img src="./Group 21.png" alt="">
+          </div>
+        </div>
+
+        <div class="second-solution">
+          <div class="card2">
+            <div class="skill skill-two">
+              <img src="./Group 22.png" alt="">
+            </div>
+            <div class="skill skill-three">
+              <img src="./Group 24.png" alt="">
+            </div>
+          </div>
+
+          <div class="card2-1">
+            <div class="skill skill-four">
+              <img src="./Group 23.png" alt="">
+            </div>
+          </div>
+          </div>
+    <div>
+        <div class="thirth-solution">
+          <div class="skill skill-five">
+            <img src="./Group 4.png" alt="">
+          </div>
+          <div class="skill skill-six">
+            <img src="./Group 6.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+        
+
+    </section>
+
+    <!------About Section------>
+    <div class="about-section">
+        <img class="image-about" src="./image-removebg-preview(563).png" alt="">
+        <div class="about-text">
+            <h2>I’m Amy, and I’d love to work on your next project</h2>
+            <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+            <button class="pink-button"><a class="paregraph-button">Free Consultation</a></button>
+        </div>
+    </div>
+
+
+    <!------WORK Section------>
+    <div class="work-title">
+        <h2> Work </h2>
+      </div>
+    
+    <div class="swiper sample-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./Bitmap Copy 2.png"></div>
+            <div class="swiper-slide"><img src="./Bitmap (1).png"></div>
+            <div class="swiper-slide"><img src="./Bitmap.png"></div>
+        </div>
+        <div class="button-swiper">
+        <img class="first-button-swiper" src="./Group 19.png" alt="">
+        <img class="second-button-swiper" src="./Group 19 Copy.png" alt="">
+      </div>
+    </div>
+    
+
+
+    <!------BOOK A CALL WITH ME ------>
+    <div class="call-section">
+        <div class="text-call">
+            <h2 style="color: white;">Book a call with me</h2>
+            <p style="color: white;">I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+        </div>
+        <div>
+            <button class="pink-button"><a class="paregraph-button">Free Consultation</a></button>
+        </div>
+    </div>
+
+
+    <!------FOOter ------>
+
+    <footer class=" navbar" style="margin: 64px O;">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+            <rect width="64" height="64" fill="#030303"/>
+            <circle cx="32" cy="32" r="14" stroke="#FFF7F0" stroke-width="4"/>
+            </svg>
+        </div>
+        <div><button class="navbar-button"><p class="paregraph-button">Free Consultation</p></button></div>
+    </footer>
+
+    <!------JS ------>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.sample-slider', {
+            loop: true,                         
+            slidesPerView: 3,                  
+            centeredSlides : true,              
+            spaceBetween: 30,                     
+            pagination: {                       
+                el: '.swiper-pagination',
+            },
+            navigation: {                       
+                nextEl: ".second-button-swiper",
+                prevEl: ".first-button-swiper",
+            },
+            breakpoints: {
+    900: {
+      slidesPerView: 3,
+    },
+    0: {
+      slidesPerView: 1,
+      centeredSlides: true
+
+    }
+  }
+        })
+        
+    </script>
+</body>
+</html>
